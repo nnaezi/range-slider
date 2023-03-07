@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.min.js"></script>
+ </head>
+ <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+ </style>
+ <body>
+    <script>
+    //    function setup() {
+    //         createCanvas(windowWidth, windowHeight); 
+    //         x = 0;
+    //         y = 0;
+    //     }
+
+    //     function draw(){
+    //         background(220);  
+    //         x = x + 10
+    //         y = y + 5
+    //         circle(x, y,100);
+    //     }
+
+        function setup() {
+            background(500)
+              createCanvas(windowWidth, windowHeight); 
+              x = 0;
+              y = 0;
+            }
+
+        function draw(){
+            fill(random(255), random(255), random(255))
+            circle(mouseX+random(-20, 10), mouseY+random(-10, 15), random(200)) 
+        
+        }
+
+    </script>
+ </body>
+ </html>
